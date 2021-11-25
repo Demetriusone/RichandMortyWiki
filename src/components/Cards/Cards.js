@@ -3,24 +3,45 @@ import styles from "./Cards.module.scss";
 
 const Cards = ({ results }) => {
   let display;
-  console.log(results);
   if (results) {
     display = results.map((x) => {
       let { name, id, image, location, status } = x;
       return (
-        <div key={id} className="col-md-4 position-relative">
+        <div key={id} className="col-md-4 mb-4 position-relative">
           <div className={styles.cards}>
-            <img src={image} alt="img" className="img-fluid" />
-            <div className="content">
+            <img src={image} alt="img" className={`${styles.img} img-fluid`} />
+            <div style={{ padding: "10px" }} className="content">
               <div className="fs-4 fw-bold mb-4"> {name}</div>
               <div className="fs-6">Last Location</div>
               <div className="fs-5">{location.name}</div>
             </div>
-            <div
-              className={`${styles.badge} badge bg-danger position-absolute`}
-            >
-              {status}
-            </div>
+            {(() => {
+              if (status === "Dead") {
+                return (
+                  <div
+                    className={`${styles.badge} badge bg-danger position-absolute`}
+                  >
+                    {status}
+                  </div>
+                );
+              } else if (status === "Alive") {
+                return (
+                  <div
+                    className={`${styles.badge} badge bg-success position-absolute`}
+                  >
+                    {status}
+                  </div>
+                );
+              } else {
+              }
+              return (
+                <div
+                  className={`${styles.badge} badge bg-secondary position-absolute`}
+                >
+                  {status}
+                </div>
+              );
+            })()}
           </div>
         </div>
       );
