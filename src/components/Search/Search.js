@@ -6,16 +6,14 @@ const Search = ({ setSearch, setPageNumber, search, pageNumber }) => {
   const sendPost = (e) => {
     e.preventDefault();
     setSearch(inputText.value);
+    inputText.value = "";
   };
 
   return (
     <form className="d-flex justify-content-center gap-4 mb-5">
       <input
         onChange={(event) => {
-          if (inputText.value == "") {
-            setSearch("");
-            console.log(pageNumber);
-          }
+          setPageNumber(1);
         }}
         type="text"
         id="search"
