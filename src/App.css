@@ -5,3 +5,9 @@ body {
 .ubuntu {
     font-family: Ubuntu, sans-serif;
 }
+
+.active {
+    font-width: bold;
+    color: #0b5ed7 !important;
+    transition: .3s ease color !important;
+}

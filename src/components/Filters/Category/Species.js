@@ -1,7 +1,7 @@
 import React from "react";
 import FilterBtn from "./FilterBTN";
 
-const Species = ({ setPageNumber, setStatus }) => {
+const Species = ({ setPageNumber, setSpecies }) => {
   let species = [
     "Human",
     "Alien",
@@ -35,7 +35,7 @@ const Species = ({ setPageNumber, setStatus }) => {
         aria-labelledby="headingTwo"
         data-bs-parent="#accordionExample"
       >
-        <div className="accordion-body">
+        <div className="accordion-body d-flex flex-wrap gap-3">
           {species.map((items, index) => (
             <FilterBtn
               key={index}
@@ -43,7 +43,7 @@ const Species = ({ setPageNumber, setStatus }) => {
               name="species"
               index={index}
               items={items}
-              task={setStatus}
+              task={setSpecies}
             />
           ))}
         </div>
