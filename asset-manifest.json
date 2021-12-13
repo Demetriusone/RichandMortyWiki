@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/RichandMortyWiki-gh/static/css/main.d0b05d58.chunk.css",
+    "main.js": "/RichandMortyWiki-gh/static/js/main.77a0e1d5.chunk.js",
+    "main.js.map": "/RichandMortyWiki-gh/static/js/main.77a0e1d5.chunk.js.map",
+    "runtime-main.js": "/RichandMortyWiki-gh/static/js/runtime-main.e1c4e18f.js",
+    "runtime-main.js.map": "/RichandMortyWiki-gh/static/js/runtime-main.e1c4e18f.js.map",
+    "static/css/2.383c0125.chunk.css": "/RichandMortyWiki-gh/static/css/2.383c0125.chunk.css",
+    "static/js/2.440136fa.chunk.js": "/RichandMortyWiki-gh/static/js/2.440136fa.chunk.js",
+    "static/js/2.440136fa.chunk.js.map": "/RichandMortyWiki-gh/static/js/2.440136fa.chunk.js.map",
+    "static/js/3.53f38d0a.chunk.js": "/RichandMortyWiki-gh/static/js/3.53f38d0a.chunk.js",
+    "static/js/3.53f38d0a.chunk.js.map": "/RichandMortyWiki-gh/static/js/3.53f38d0a.chunk.js.map",
+    "index.html": "/RichandMortyWiki-gh/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/RichandMortyWiki-gh/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.d0b05d58.chunk.css.map": "/RichandMortyWiki-gh/static/css/main.d0b05d58.chunk.css.map",
+    "static/js/2.440136fa.chunk.js.LICENSE.txt": "/RichandMortyWiki-gh/static/js/2.440136fa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1c4e18f.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.440136fa.chunk.js",
+    "static/css/main.d0b05d58.chunk.css",
+    "static/js/main.77a0e1d5.chunk.js"
+  ]
+}
