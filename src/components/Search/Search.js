@@ -10,24 +10,26 @@ const Search = ({ setSearch, setPageNumber, search, pageNumber }) => {
   };
 
   return (
-    <form className="d-flex justify-content-center gap-4 mb-5">
-      <input
-        onChange={(event) => {
-          setPageNumber(1);
-        }}
-        type="text"
-        id="search"
-        className={`${styles.input} `}
-        placeholder="Search for character"
-        type="text"
-      />
-      <button
-        onClick={sendPost}
-        className={`${styles.btn} btn btn-primary fs-5`}
-      >
-        Search
-      </button>
-    </form>
+    <div className="container">
+      <form className="d-flex flex-sm-row align-items-center justify-content-center gap-4 mb-5">
+        <input
+          onChange={(event) => {
+            setPageNumber(1);
+          }}
+          type="text"
+          id="search"
+          className={`${styles.input} `}
+          placeholder="Search for character"
+          type="text"
+        />
+        <button
+          onClick={sendPost}
+          className={`${styles.btn} btn btn-primary fs-5`}
+        >
+          Search
+        </button>
+      </form>
+    </div>
   );
 };
 
